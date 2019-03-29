@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -29,4 +29,10 @@
   to {
     transform: rotate(360deg);
   }
+} */
+svg g#logo-wordmark {
+  fill: white;
+}
+.navbar {
+  background-color: #172a3b !important;
 }
