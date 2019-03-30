@@ -15,38 +15,34 @@ class Face extends Component {
     const splittedBio = prepareText(bio);
     return (
       <div className="Face">
-        <Container>
-          <Row>
-            <Col>
-              <Figure>
-                <Figure.Image
-                  src={process.env.PUBLIC_URL + "/faces/" + image + ".png"}
-                  roundedCircle
-                  width="60%"
-                />
-                <Figure.Caption>
+        <Row>
+          <Col align="center">
+            <Figure>
+              <Figure.Image
+                src={process.env.PUBLIC_URL + "/faces/" + image + ".png"}
+                roundedCircle
+                width="50%"
+              />
+              <Figure.Caption>
+                <p>
+                  {name} <b>{prepareTwitter(twitter)}</b>
+                </p>
+                <p>Age: {age}</p>
+                <span>
                   <p>
-                    {name} <b>{prepareTwitter(twitter)}</b>
+                    {co}
+                    <img
+                      src={`https://www.countryflags.io/${coflag}/flat/24.png`}
+                      alt={co}
+                    />
                   </p>
-                  <p>Age: {age}</p>
-                  <span>
-                    <p>
-                      {co}
-                      <img
-                        src={`https://www.countryflags.io/${coflag}/flat/24.png`}
-                        alt={co}
-                      />
-                    </p>
-                  </span>
-                </Figure.Caption>
-              </Figure>
-            </Col>
-            <Col>
-              <p>{splittedBio[0]}</p>
-              <p>{splittedBio[1]}</p>
-            </Col>
-          </Row>
-        </Container>
+                </span>
+                <p>{splittedBio[0]}</p>
+                <p>{splittedBio[1]}</p>
+              </Figure.Caption>
+            </Figure>
+          </Col>
+        </Row>
       </div>
     );
   }

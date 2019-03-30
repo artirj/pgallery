@@ -1,0 +1,18 @@
+.carousel-control-prev-icon {
+  background-image: url("./arrow2.svg");
+  width: 200px;
+  height: 200px;
+  transform: rotate(180deg);
+}
+.carousel-control-next-icon {
+  background-image: url("./arrow2.svg");
+  width: 200px;
+  height: 200px;
+}
+.slide {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.jumbotron {
+  height: 800px;
+}
