@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "create-react-app-pi",
-  "alias": ["ricon.dev"],
+  "alias": "ricon.dev",
   "builds": [
     {
       "src": "package.json",

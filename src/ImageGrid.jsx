@@ -20,6 +20,7 @@ class ImageGrid extends Component {
   render() {
     return (
       <div className="ImageGrid">
+        <h1>Choose your Pioneer!</h1>
         <Row>{this.faces}</Row>
       </div>
     );
