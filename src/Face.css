@@ -20,7 +20,11 @@
   border-right: 2px solid;
   border-image-width: 0px 4px 0px 0px;
 }
-
+/* https://www.dafont.com/karmatic-arcade.font */
+@font-face {
+  font-family: Arcade;
+  src: url("./ka1.ttf");
+}
 .FaceWithBio .Face {
   border-image-source: url("./pioneerdots.png");
   border-image-repeat: round;
@@ -29,11 +33,14 @@
   border-image-width: 0px 0px 4px 0px;
   margin-bottom: 10px;
 }
-/* https://www.dafont.com/karmatic-arcade.font */
-@font-face {
+.card-title {
   font-family: Arcade;
-  src: url("./ka1.ttf");
+  font-size: 40px;
 }
+.FaceWithBio .Face img {
+  width: 256px;
+}
+
 .ImageGrid {
   text-align: center;
   font-family: "Arcade";

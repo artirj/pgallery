@@ -14,6 +14,17 @@ class FaceWithBio extends Component {
       co
     } = this.props.sourceData;
     const splittedBio = prepareText(bio);
+    const flagList = typeof coflag === "string" ? [coflag] : coflag;
+    console.log(flagList);
+    const flags = flagList.map(coflag => {
+      return (
+        <img
+          src={`https://www.countryflags.io/${coflag}/flat/24.png`}
+          alt={co}
+          style={{ marginLeft: "10px" }}
+        />
+      );
+    });
     return (
       <div className="FaceWithBio">
         <Face image={image} />
@@ -26,11 +37,7 @@ class FaceWithBio extends Component {
           <span>
             <p>
               {co}
-              <img
-                src={`https://www.countryflags.io/${coflag}/flat/24.png`}
-                alt={co}
-                style={{ marginLeft: "10px" }}
-              />
+              {flags}
             </p>
           </span>
           <p>{splittedBio[0]}</p>

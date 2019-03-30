@@ -12,7 +12,7 @@
     "image": "pio1-2",
     "name": "Emma Salinas",
     "age": 18,
-    "co": "USA",
+    "co": "United States",
     "coflag": "US",
     "twitter": "@emmalsalinas",
     "bio": "Emma is designing and engineering a new kind of digital watch. It’s minimalist and can be read by both sight and touch. It is a beautiful and unique timepiece for the blind, but its aesthetic can be appreciated by anyone.\nNoteworthy: In her application, Emma came across as extremely curious, learning at an impressive rate. She spent her last two years of high school taking classes at a local college, and is currently self educating herself."
@@ -21,7 +21,7 @@
     "image": "pio1-3",
     "name": "Leonard Bogdonoff",
     "age": 29,
-    "co": "USA",
+    "co": "United States",
     "coflag": "US",
     "twitter": "@rememberlenny",
     "bio": "Lenny is building a digital genealogy of street art. He’s scraping Instagram and making a searchable database of street art around the world. This project might amplify the voice of “protest art” against the constraints of censorship from autocratic governments, but it is also a new way to glean usable information from Instagram.\nNoteworthy: Lenny has an impressive history of doing lots of stuff. He also demonstrated rapid week-over-week progress, with actionable goals and metrics (“Labeled +58,255 images from 191 street artists from around the world”, “Built an iPhone app”)."
@@ -38,7 +38,7 @@
     "image": "pio1-5",
     "name": "Harsh Sikka",
     "age": 23,
-    "co": "USA",
+    "co": "United States",
     "twitter": "@harshikka",
     "coflag": "US",
     "bio": "Harsh is building AI that’s inspired by biological principles from neuroscience. The algorithms will be applicable in disease diagnosis, robotics, synthetic biology, environmental sensing and other complex problem spaces.\nNoteworthy: Harsh is a graduate student studying Biocomputation and AI at Harvard and Georgia Tech. His work is a long shot. But if it works, it stands to provide a dramatic breakthrough in computing, enabling us to better prevent the outbreak of diseases by doing better forecasting. Harsh also has a long standing history of making stuff. He built a kind of Pinterest for ML models and an automated reading assessment tool. This mixture of researcher and hacker is a rare and powerful combo."
@@ -46,7 +46,7 @@
   {
     "name": "Hunter Scott",
     "age": 28,
-    "co": "USA",
+    "co": "United States",
     "twitter": "@hunterscott",
     "image": "pio1-6",
     "coflag": "US",
@@ -58,7 +58,7 @@
     "co": "Singapore & USA",
     "twitter": "@bhavashok",
     "image": "pio1-7",
-    "coflag": "SG",
+    "coflag": ["SG", "US"],
     "bio": "Bhav came up with a way to train a neural network to compress other neural networks. The compression process produces a faster and smaller network without sacrificing accuracy. This has the potential to vastly improve response time in self-driving cars, satellite imaging, and mobile apps.\nNoteworthy: By age 12, Bhav was programming and making money selling graphics add-ons for games. At 16, he started doing research in machine learning for bioinformatics. He left Singapore for Austin, where he created TexteDB and founded a company. Bhav later enrolled in the Masters program at CMU, earned the highest GPA in his program, founded a computer vision club, and worked on various research projects."
   },
   {
@@ -72,7 +72,7 @@
   },
   {
     "name": "Harshu Musunuri",
-    "co": "USA",
+    "co": "United States",
     "age": 18,
     "image": "pio1-9",
     "coflag": "US",
@@ -81,7 +81,7 @@
   {
     "name": "Neelay Trivedi",
     "age": 17,
-    "co": "USA",
+    "co": "United States",
     "twitter": "@neelay_trivedi",
     "image": "pio1-10",
     "coflag": "US",
@@ -93,7 +93,7 @@
     "image": "pio1-11",
     "co": "USA & Brazil",
     "twitter": "@thejuliawu",
-    "coflag": "BR",
+    "coflag": ["US", "BR"],
     "bio": "Julia is making a game where one collects and trades elements of renewable energy on the Ethereum blockchain. She’s leveraging the surprising power of crypto-kitties to address climate change. The values of the tokens fluctuate with the performance of clean energy in public markets.\nNoteworthy: Coming from China to Brazil at a young age and speaking only Chinese, Julia grew up as an outsider. She graduated from Brown last year, where she was a CS teaching assistant, and founded Lean In at Brown University. She interned at Microsoft and currently works at Apple."
   },
   {
@@ -107,7 +107,7 @@
   {
     "name": "Pranay Prakash",
     "age": 21,
-    "co": "USA",
+    "co": "United States",
     "twitter": "@pranaygp",
     "image": "pio1-13",
     "coflag": "US",
@@ -135,7 +135,7 @@
     "name": "Pavle Goloskokovic",
     "age": 28,
     "twitter": "@pgoloskokovic",
-    "co": "serbia",
+    "co": "Serbia",
     "image": "pio1-16",
     "coflag": "RS",
     "bio": "Pavle is building a VR Adventure Game for the blind. Yep, VR for blind people. It’s a narrative-driven adventure game that completely relies on audible and tactile feedback to guide players in a role of a protagonist through an interactive story driven by exploration and puzzle-solving.\nNoteworthy: Pavle’s a risk taker: he left his job at a startup to start his own gaming studio. He’s already built several projects and games. He also had a conscientious habit of submitting actionable status updates early. He’s working on the type of unusual project the Pioneer community seems to love."
@@ -143,9 +143,191 @@
   {
     "name": "Amulya Balakrishnan",
     "age": 18,
-    "co": "USA",
+    "co": "United States",
     "image": "pio1-17",
     "coflag": "US",
     "bio": "Amulya is creating a wearable device that provides real-time, continuous ECG heart rate monitoring data. There currently exists no FDA-approved solution that can monitor ECG data in real time. Amulya is going to make it.\nNoteworthy: Amulya recently graduated high school. Her friends and family expected her to go the standard collegiate route, but she decided to charter her own course. Her earlier project, an ADHD diagnosis tool, won the Disrupt NY 2017 Hackathon Grand Prize."
+  },
+  {
+    "name": "Matthew McAteer",
+    "age": 26,
+    "co": "United States",
+    "image": "secondpostpng_1",
+    "coflag": "US",
+    "twitter": "@matthewmcateer0",
+    "bio": "Software that lets anyone easily run AI algorithms on sensitive data without it being personally identifiable. Data privacy is of increasing scarcity and importance in our world. Since AI requires data to fuel its intelligence, it’s important to figure out ways to both make smart models and preserve customer privacy, especially in domains like biomedical research.\nNoteworthy: Matthew has the perfect background for this job, having spent years studying neurology research and as a software engineer at Google, working on AI tooling. He also writes algorithmic trading scripts on the side. If that wasn't enough, previously created a bacterial strain that produces an anti-aging molecule (NMN) at 100x less the cost."
+  },
+  {
+    "name": "Eibhlin Lim",
+    "age": 23,
+    "co": "Malaysia",
+    "image": "secondpostpng_2",
+    "coflag": "MY",
+    "twitter": "@eibhlin_lim",
+    "bio": "Innovators are kickstarted into action by stories of other innovators. There’s so much that hasn’t been written about how our modern geniuses got started. What their life was like as teenagers, etc. Eibhlin is going to produce a series of publications about this. A magazine that radicalizes people to follow their dreams.\nNoteworthy: Eibhlin started writing for The Star—the most widely read English newspaper in Malaysia—when she was 15. Though only 23, she’s published more than 50 articles in news outlets in Malaysia, Hong Kong and USA."
+  },
+  {
+    "image": "secondpostpng_6",
+    "age": 24,
+    "name": "Benedict Asamoah",
+    "twitter": "@wrilben",
+    "co": "Ghana",
+    "coflag": "GH",
+    "bio": "A Thumbtack for Africa, with a particular lean on service trust and vendor vetting.\nNoteworthy: Benedict is a self-taught engineer who has been working on startup ideas since he was 16 years old. Progress was the defining characteristic of his gamesmanship in the tournament. He went from a barebones prototype, to launch, to revenue in the short span of 30 days."
+  },
+  {
+    "image": "secondpostpng_5",
+    "age": 19,
+    "name": "Huw Evans",
+    "co": "Australia",
+    "coflag": "AU",
+    "twitter": "@huwsername",
+    "bio": "Huw is applying deep-learning to noisy EEG signals. Many have tried to use EEGs to infer thoughts. From controlling drones to mind-reading words, the results have been somewhat lackluster. However, very little research has been done using new, novel deep learning techniques to properly sift through the dirty mud of EEG data. If Huw’s project works, it’ll revolutionize brain-computer interfaces. Cheap EEG sensors will become the new mouse.\nNoteworthy: Huw’s already worked on an incredible collection of projects despite being just 19. Previously he made AI models that help self-driving cars detect where pedestrians are looking (in real time) to help prevent fatalities. Before that, he tried to predict weight loss using microbiome data. Before that he was researching AI models that function with little data. Etc. Etc."
+  },
+  {
+    "image": "secondpostpng_3",
+    "age": 22,
+    "name": "Abhijit Gupta",
+    "co": "India",
+    "coflag": "IN",
+    "bio": "A driver telemetry assistant that makes vehicles safer and more connected, aimed at the chaotic traffic of India. Plug it into your car (or fleet) and it’ll enable you to stay alert, avoid collisions, follow road rules and drive better.\nNoteworthy: Both Rohan and Abhijit’s lives epitomize precociousness. Though only 22, they've already done work on autonomous cars, industrial IoT systems, smart pollution monitoring systems, indoor positioning systems, and smart power grid systems, culminating in 3 publications and 5 filed patents."
+  },
+  {
+    "image": "secondpostpng_4",
+    "age": 22,
+    "name": "Rohan Rao",
+    "co": "India",
+    "coflag": "IN",
+    "bio": "A driver telemetry assistant that makes vehicles safer and more connected, aimed at the chaotic traffic of India. Plug it into your car (or fleet) and it’ll enable you to stay alert, avoid collisions, follow road rules and drive better.\nNoteworthy: Both Rohan and Abhijit’s lives epitomize precociousness. Though only 22, they've already done work on autonomous cars, industrial IoT systems, smart pollution monitoring systems, indoor positioning systems, and smart power grid systems, culminating in 3 publications and 5 filed patents."
+  },
+  {
+    "name": "Azlen Elza",
+    "image": "pio3-12",
+    "age": 18,
+    "co": "Canada",
+    "coflag": "CA",
+    "twitter": "azlen.me",
+    "bio": "Azlen is making an app that uses new memory techniques to teach people Chinese characters at surprising speed. His project works a principle of mnemonics, connecting new information (pronunciation, tone, stroke order) to existing structures in the brain through memories or stories.\nNoteworthy: Azlen learned R (a programming language for data science) in elementary school. He’s only 18 and has built a ton of impressive projects, from teaching computers how to design business cards to a video game about social anxiety. "
+  },
+  {
+    "name": "Fraser Greenlee",
+    "image": "pio3-6",
+    "age": 21,
+    "co": "United Kingdom",
+    "coflag": "GB",
+    "twitter": "@FraserGreenlee",
+    "bio": "Fraser is building desc2code, an app that converts English into code. Engineers constantly task switch between writing code and finding it on sites like StackOverflow or searching Google. Fraser is connecting those worlds by letting developers specify intent and pulling in the right incantation. Accelerating the link between the human mind and the machine. It’s Occam’s Razor for Neuralink.\nNoteworthy: Almost everyone in the tournament that came across his work found him very productive, often exceeding his weekly goals. He’s also a tinkerer across all disciplines. Like a young Edison, he became popular in his neighborhood by making tools that made it far easier to hang and clean laundry, then giving it away to his neighbors, who were not too happy about his new found passion for code."
+  },
+  {
+    "image": "pio3-0",
+    "name": "Mark Lutter",
+    "age": 29,
+    "co": "United States",
+    "coflag": "US",
+    "twitter": "@MarkLutter",
+    "bio": "Mark and Tamara are building the ecosystem for charter cities — a concept where cities are governed by their own charter rather than general law. Imagine a world with dozens of new cities, each with their own distinct style, governance and populace. Mark and Tamara are working to make that vibrant future a reality.\nNoteworthy: Mark has a PhD in Economics from George Mason, but don’t let that fool you into thinking he’s conventional. He’s a disagreeable, life-long adventurer. He decided to do his own thing after realizing little progress was being made on charter cities. He moved to Honduras while it was the murder capital of the world. Now he’s stumbling through Africa looking for new city developers to work with."
+  },
+  {
+    "image": "pio3-1",
+    "name": "Tamara Winter",
+    "age": 23,
+    "co": "United States",
+    "coflag": "US",
+    "twitter": "@_TamaraWinter",
+    "bio": "Mark and Tamara are building the ecosystem for charter cities — a concept where cities are governed by their own charter rather than general law. Imagine a world with dozens of new cities, each with their own distinct style, governance and populace. Mark and Tamara are working to make that vibrant future a reality.\nNoteworthy: Mark has a PhD in Economics from George Mason, but don’t let that fool you into thinking he’s conventional. He’s a disagreeable, life-long adventurer. He decided to do his own thing after realizing little progress was being made on charter cities. He moved to Honduras while it was the murder capital of the world. Now he’s stumbling through Africa looking for new city developers to work with."
+  },
+  {
+    "image": "pio3-2",
+    "name": "Nicholas Donahue",
+    "co": "United States",
+    "coflag": "US",
+    "age": 20,
+    "twitter": "@PrimalNick",
+    "bio": "Nick and Austin are making Atmos.world, a VR headset that’s optimized for web developers. Developing mixed-reality apps is hard. You need to know the annals of advanced 3D libraries, like Unity. Atmos will unleash VR to a generation of developers born online, who are far more comfortable with Javascript than C++.\nNoteworthy: Though only 21, this is Nick’s second company. During the last week of the tournament, Nick and Austin left their jobs at another startup to focus on Atmos. Austin is a designer and tinkerer -- he’s built everything from giant 12” steel arcs art exhibits to his own glucometer(!), which he uses daily."
+  },
+  {
+    "image": "pio3-3",
+    "name": "Austin Kahn",
+    "co": "United States",
+    "coflag": "US",
+    "age": 20,
+    "twitter": "ig:austin.kahn",
+    "bio": "Nick and Austin are making Atmos.world, a VR headset that’s optimized for web developers. Developing mixed-reality apps is hard. You need to know the annals of advanced 3D libraries, like Unity. Atmos will unleash VR to a generation of developers born online, who are far more comfortable with Javascript than C++.\nNoteworthy: Though only 21, this is Nick’s second company. During the last week of the tournament, Nick and Austin left their jobs at another startup to focus on Atmos. Austin is a designer and tinkerer -- he’s built everything from giant 12” steel arcs art exhibits to his own glucometer(!), which he uses daily."
+  },
+  {
+    "image": "pio3-4",
+    "name": "Arsalan Bashir",
+    "age": 23,
+    "co": "UAE",
+    "coflag": "AE",
+    "twitter": "@arsalanbashir",
+    "bio": "Arsalan is creating AfterClass, a new kind of document editor. AfterClass helps you pull live data from your existing tools and APIs to create self-updating documents, and build custom automations for repetitive business logic. \nNoteworthy: Arsalan is a mechanical engineer and self-taught programmer based in Dubai. He started coding when he was 12 years old and has previously built a classroom-AI program which became the #1 app used by homeschoolers in UK."
+  },
+  {
+    "image": "pio3-5",
+    "name": "Mishka Orakzai",
+    "age": 27,
+    "co": "Pakistan",
+    "coflag": "PK",
+    "twitter": "@thiscodeworks",
+    "bio": "Mishka is building ThisCodeWorks.com, a place to save, share and bookmark code snippets — think GitHub Gists meets Pinterest. New forms of social networks are the type of small, seemingly-uninteresting ideas we think could get surprisingly big in time.\nNoteworthy: Mishka is defying statistics twice: once by starting a startup in Pakistan, another by learning to code relatively later on in life. Week after week, players of the tournament were impressed with her crisp goals and consistent progress."
+  },
+  {
+    "image": "pio3-16",
+    "name": "Elena Nadolinski",
+    "age": 26,
+    "co": "United States",
+    "coflag": "US",
+    "twitter": "@leanthebean",
+    "bio": "Elena and Dusty are creating a universally accessible, borderless, and private payment system. They want to build a way for people to attain full autonomy and financial privacy when it comes to personal wealth. \nNoteworthy: Outside of her coding prowess, Elena has also run a side business making jewelry out of old electronics salvaged from dumpsters. She sold these pieces at women in tech events and on her Etsy store. Dusty has a Master’s degree in computer science and has worked across environments as diverse as a two person start up, to the UN, to Facebook since then."
+  },
+  {
+    "image": "pio3-17",
+    "name": "Dusty Philips",
+    "age": 35,
+    "co": "Canada",
+    "coflag": "CA",
+    "twitter": "dusty.phillips.codes",
+    "bio": "Elena and Dusty are creating a universally accessible, borderless, and private payment system. They want to build a way for people to attain full autonomy and financial privacy when it comes to personal wealth. \nNoteworthy: Outside of her coding prowess, Elena has also run a side business making jewelry out of old electronics salvaged from dumpsters. She sold these pieces at women in tech events and on her Etsy store. Dusty has a Master’s degree in computer science and has worked across environments as diverse as a two person start up, to the UN, to Facebook since then."
+  },
+  {
+    "image": "pio3-13",
+    "name": "Thomas Ribeiro",
+    "co": "Canada",
+    "coflag": "CA",
+    "bio": "Raffi, Thomas, and Wilfred are making a $1,000 portable brain scanner. They envision a future where an instant medical diagnosis can be obtained whether a patient is in the hospital room, in field hospitals or in an ambulance. The scanner will use a portable brain-imaging helmet with photoacoustic tomography to map proteins, blood flow, and signaling molecules in the brain.\nNoteworthy: The team have all spent time on individual projects in medical or scientific research and been recognized on the local and international stage. Raffi has worked on brain imaging protocol to diagnose Alzheimer's Disease, and Thomas has created a small scale prototype of a power plant that generates more efficient electricity, while Wilfred has mutated and transplanted nano-metallic agents into photosynthetic bacteria."
+  },
+  {
+    "image": "pio3-14",
+    "name": "Wilfred Mason",
+    "co": "Canada",
+    "coflag": "CA",
+    "bio": "Raffi, Thomas, and Wilfred are making a $1,000 portable brain scanner. They envision a future where an instant medical diagnosis can be obtained whether a patient is in the hospital room, in field hospitals or in an ambulance. The scanner will use a portable brain-imaging helmet with photoacoustic tomography to map proteins, blood flow, and signaling molecules in the brain.\nNoteworthy: The team have all spent time on individual projects in medical or scientific research and been recognized on the local and international stage. Raffi has worked on brain imaging protocol to diagnose Alzheimer's Disease, and Thomas has created a small scale prototype of a power plant that generates more efficient electricity, while Wilfred has mutated and transplanted nano-metallic agents into photosynthetic bacteria."
+  },
+  {
+    "image": "pio3-15",
+    "name": "Raffi Hotter",
+    "co": "Canada",
+    "coflag": "CA",
+    "twitter": "@raffi_hotter",
+    "bio": "Raffi, Thomas, and Wilfred are making a $1,000 portable brain scanner. They envision a future where an instant medical diagnosis can be obtained whether a patient is in the hospital room, in field hospitals or in an ambulance. The scanner will use a portable brain-imaging helmet with photoacoustic tomography to map proteins, blood flow, and signaling molecules in the brain.\nNoteworthy: The team have all spent time on individual projects in medical or scientific research and been recognized on the local and international stage. Raffi has worked on brain imaging protocol to diagnose Alzheimer's Disease, and Thomas has created a small scale prototype of a power plant that generates more efficient electricity, while Wilfred has mutated and transplanted nano-metallic agents into photosynthetic bacteria."
+  },
+  {
+    "image": "pio3-7",
+    "age": 18,
+    "name": "Justin Zheng",
+    "co": "United States",
+    "coflag": "US",
+    "twitter": "@jzlegion",
+    "bio": "Justin and Sungun are creating a new form of a crypto private that you can't lose by applying novel biometric techniques. The idea is for the user to utilize their own body as their authentication and recovery system.\nNoteworthy: Justin is still completing high school, but is rapidly expanding his expertise in robotics, esports, blockchain, and encryption. Sungun has a Ph.D in Biochemistry and is a post-doc at Stanford University School of Medicine in Neurodegenerative Diseases."
+  },
+  {
+    "image": "pio3-8",
+    "age": 39,
+    "name": "Sungun Huh",
+    "co": "United States",
+    "coflag": "US",
+    "twitter": "@SungunHuh",
+    "bio": "Justin and Sungun are creating a new form of a crypto private that you can't lose by applying novel biometric techniques. The idea is for the user to utilize their own body as their authentication and recovery system.\nNoteworthy: Justin is still completing high school, but is rapidly expanding his expertise in robotics, esports, blockchain, and encryption. Sungun has a Ph.D in Biochemistry and is a post-doc at Stanford University School of Medicine in Neurodegenerative Diseases."
   }
 ]
