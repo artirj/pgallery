@@ -1,25 +1,31 @@
 .carousel-control-prev-icon {
   background-image: url("./arrow2.svg");
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   transform: rotate(180deg);
 }
 .carousel-control-next-icon {
   background-image: url("./arrow2.svg");
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 .slide {
   padding-left: 20%;
   padding-right: 20%;
 }
-.jumbotron {
-  height: 800px;
+.card {
+  height: 100%;
   background-color: #172a3b;
+  color: white;
+  text-align: center;
+  min-height: 800px;
 }
 .carousel-item {
   transition-duration: 0.1s;
 }
 .figure-caption {
   color: white;
+}
+.MyCarousel {
+  position: fixed;
 }

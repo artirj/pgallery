@@ -4,3 +4,6 @@ svg g#logo-wordmark {
 .navbar {
   background-color: #172a3b !important;
 }
+#footer a {
+  font-size: 10px;
+}

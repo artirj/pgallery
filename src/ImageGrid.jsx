@@ -1,14 +1,19 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
-import MyCarousel from "./Carousel";
+import { Row, Col } from "react-bootstrap";
+
 import Face from "./Face";
 
 class ImageGrid extends Component {
-  faces = this.props.data.map(pioneer => {
+  faces = this.props.data.map((pioneer, idx) => {
     return (
-      <Col key={pioneer["image"]} md={3} lg={3}>
-        <Face image={pioneer["image"]} name={pioneer["name"]} />
+      <Col key={idx} md={4}>
+        <Face
+          image={pioneer["image"]}
+          name={pioneer["name"]}
+          clickHandler={this.props.clickHandler}
+          idx={idx}
+        />
       </Col>
     );
   });

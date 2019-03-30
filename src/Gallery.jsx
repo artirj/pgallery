@@ -6,16 +6,29 @@ import ImageGrid from "./ImageGrid";
 import "./Gallery.css";
 
 class Gallery extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: 0
+    };
+  }
+  setGalleryIndex = index => {
+    this.setState({
+      index: index
+    });
+  };
+
   render() {
+    const { data } = this.props;
     return (
       <div className="Gallery">
         <Container fluid={true}>
           <Row>
             <Col md={6}>
-              <ImageGrid data={this.props.data} />
+              <ImageGrid data={data} clickHandler={this.setGalleryIndex} />
             </Col>
             <Col md={6}>
-              <MyCarousel data={this.props.data} />
+              <MyCarousel data={data} index={this.state.index} />
             </Col>
           </Row>
         </Container>

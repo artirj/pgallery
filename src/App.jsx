@@ -19,6 +19,11 @@ class App extends Component {
           </Navbar.Brand>
         </Navbar>
         <Gallery data={data} />
+        <Navbar bg="dark" variant="dark" id="footer">
+          <Navbar.Brand href="#home">
+            {"© 2019 The Pioneer Hall of Fame or something"}
+          </Navbar.Brand>
+        </Navbar>
       </div>
     );
   }

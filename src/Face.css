@@ -3,12 +3,29 @@
   transition: transform 1s;
 }
 .ImageGrid .Face img:hover {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  box-shadow: 0 0 30px rgba(81, 203, 238, 1);
   margin: 5px 1px 3px 0px;
-  border: 3px solid rgb(9, 10, 82);
-  transform: translateY(-20px) scale(1.4);
+  border: 1px solid rgb(9, 10, 82);
+  transform: translateY(-10px) scale(1.1);
 }
 
 .Face .figure-caption {
   color: #172a3b;
+}
+
+.ImageGrid {
+  border-image-source: url("./pioneerdots.png");
+  border-image-repeat: round;
+  border-image-slice: 8 8 8 8;
+  border-right: 2px solid;
+  border-image-width: 0px 4px 0px 0px;
+}
+
+.FaceWithBio .Face {
+  border-image-source: url("./pioneerdots.png");
+  border-image-repeat: round;
+  border-image-slice: 8 8 8 8;
+  border-bottom: 1px solid;
+  border-image-width: 0px 0px 4px 0px;
+  margin-bottom: 10px;
 }
