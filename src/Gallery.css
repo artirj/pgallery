@@ -1,0 +1,8 @@
+.Gallery {
+  background-color: #ffe44b;
+  padding-top: 20px;
+}
+.Gallery .container {
+  margin-left: 10px;
+  margin-right: 0px;
+}

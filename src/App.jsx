@@ -3,6 +3,7 @@ import "./App.css";
 import { ReactComponent as Logo } from "./logo.svg";
 import { Navbar } from "react-bootstrap";
 import Gallery from "./Gallery";
+const data = require("./data.json");
 class App extends Component {
   render() {
     return (
@@ -17,7 +18,7 @@ class App extends Component {
             {"/Hall of Fame"}
           </Navbar.Brand>
         </Navbar>
-        <Gallery />
+        <Gallery data={data} />
       </div>
     );
   }

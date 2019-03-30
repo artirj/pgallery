@@ -15,4 +15,11 @@
 }
 .jumbotron {
   height: 800px;
+  background-color: #172a3b;
+}
+.carousel-item {
+  transition-duration: 0.1s;
+}
+.figure-caption {
+  color: white;
 }
