@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: "FontAwesome", sans-serif;
+}
+
+.HeadText section.text {
+  width: 100%;
+
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.HeadText h1,
+h3 {
+  transform: matrix(1, -0.2, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.2, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.2, 0, 1, 0, 0);
+}
+
+.HeadText h1 {
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 70px;
+  text-shadow: 4px 5px #e6e6d8, 6px 7px #c6a39a;
+}
+
+.HeadText span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.HeadText span.star {
+  font-size: 20px;
+}
+
+.HeadText h3 {
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.HeadText h3:before,
+h3:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-top: 2px solid #121212;
+  border-bottom: 2px solid #121212;
+}
+
+.HeadText h3:before {
+  margin: 5px 0 0 -110px;
+}
+
+.HeadText h3:after {
+  margin: 5px 0 0 10px;
+}

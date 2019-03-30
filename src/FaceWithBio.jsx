@@ -41,7 +41,10 @@ class FaceWithBio extends Component {
             </p>
           </span>
           <p>{splittedBio[0]}</p>
-          <p>{splittedBio[1]}</p>
+          <p>
+            <b>Noteworthy:</b>
+            {splittedBio[1]}
+          </p>
         </Figure.Caption>
       </div>
     );

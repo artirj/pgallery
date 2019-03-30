@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import MyCarousel from "./Carousel";
 import ImageGrid from "./ImageGrid";
 import "./Gallery.css";
-
+import HeadText from "./HeadText";
 class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -23,6 +23,11 @@ class Gallery extends Component {
     return (
       <div className="Gallery">
         <Container fluid={true}>
+          <Row>
+            <Col>
+              <HeadText />
+            </Col>
+          </Row>
           <Row>
             <Col md={6}>
               <ImageGrid data={data} clickHandler={this.setGalleryIndex} />

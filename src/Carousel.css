@@ -10,7 +10,7 @@
   height: 100px;
 } */
 .slide {
-  padding-left: 20%;
+  padding-left: 10%;
   padding-right: 20%;
 }
 .card {
@@ -22,11 +22,12 @@
 }
 .carousel-item {
   transition-duration: 0.1s;
-  height: 900px;
+  height: 700px;
 }
 .figure-caption {
   color: white;
 }
 .MyCarousel {
   position: fixed;
+  min-width: 700px;
 }

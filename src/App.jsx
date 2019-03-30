@@ -18,6 +18,7 @@ class App extends Component {
             {"/Hall of Fame"}
           </Navbar.Brand>
         </Navbar>
+
         <Gallery data={data} />
         <Navbar bg="dark" variant="dark" id="footer">
           <Navbar.Brand href="#home">
