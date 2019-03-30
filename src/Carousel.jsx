@@ -20,7 +20,7 @@ class MyCarousel extends Component {
   };
   faces = this.props.data.map((pioneer, idx) => {
     return (
-      <Carousel.Item key={idx}>
+      <Carousel.Item key={idx} role="listbox">
         <Card>
           <Card.Body>
             <Card.Title>{pioneer["name"]}</Card.Title>

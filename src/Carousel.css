@@ -1,4 +1,4 @@
-.carousel-control-prev-icon {
+/* .carousel-control-prev-icon {
   background-image: url("./arrow2.svg");
   width: 100px;
   height: 100px;
@@ -8,7 +8,7 @@
   background-image: url("./arrow2.svg");
   width: 100px;
   height: 100px;
-}
+} */
 .slide {
   padding-left: 20%;
   padding-right: 20%;
@@ -22,6 +22,7 @@
 }
 .carousel-item {
   transition-duration: 0.1s;
+  height: 900px;
 }
 .figure-caption {
   color: white;

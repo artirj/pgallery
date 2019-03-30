@@ -3,6 +3,7 @@ import { Figure } from "react-bootstrap";
 import "./Face.css";
 class Face extends Component {
   handleClick = () => {
+    // Set index (of Gallery to Face index)
     if (this.props.clickHandler !== undefined) {
       this.props.clickHandler(this.props.idx);
     }
@@ -11,7 +12,7 @@ class Face extends Component {
     const { image, name } = this.props;
 
     return (
-      <div className="Face" onClick={this.handleClick}>
+      <div className="Face" onMouseEnter={this.handleClick}>
         <Figure>
           <Figure.Image
             src={process.env.PUBLIC_URL + "/faces/" + image + ".png"}
