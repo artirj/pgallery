@@ -15,13 +15,13 @@ class FaceWithBio extends Component {
     } = this.props.sourceData;
     const splittedBio = prepareText(bio);
     const flagList = typeof coflag === "string" ? [coflag] : coflag;
-    console.log(flagList);
-    const flags = flagList.map(coflag => {
+    const flags = flagList.map((coflag, ix) => {
       return (
         <img
           src={`https://www.countryflags.io/${coflag}/flat/24.png`}
           alt={co}
           style={{ marginLeft: "10px" }}
+          key={ix}
         />
       );
     });

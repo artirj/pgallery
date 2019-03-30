@@ -36,7 +36,7 @@ class MyCarousel extends Component {
       <div className="MyCarousel">
         <Carousel
           interval={null}
-          fade={true}
+          fade={false}
           activeIndex={this.props.index}
           indicators={false}
           onSelect={this.handleSelect}

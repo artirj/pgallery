@@ -10,18 +10,26 @@
   height: 100px;
 } */
 .slide {
-  padding-left: 3%;
-  padding-right: 20%;
+  margin-left: 3%;
+  margin-right: 20%;
 }
 .card {
   height: 100%;
-  background-color: #172a3b;
+  /* background-color: #172a3b; */
   color: white;
   text-align: center;
   min-height: 800px;
+  background-image: linear-gradient(
+    to top,
+    #051937,
+    #152844,
+    #243750,
+    #34475d,
+    #45576a
+  );
 }
 .carousel-item {
-  transition-duration: 0.1s;
+  transition-duration: 0s;
   height: 700px;
 }
 .figure-caption {
@@ -30,4 +38,8 @@
 .MyCarousel {
   position: fixed;
   min-width: 700px;
+}
+.MyCarousel .slide {
+  border: 7px double #051937;
+  border-radius: 11px;
 }
