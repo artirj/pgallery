@@ -1,0 +1,151 @@
+[
+  {
+    "image": "pio1-1",
+    "name": "James Gallagher",
+    "age": 16,
+    "twitter": "@jamesg_oca",
+    "co": "Scotland",
+    "coflag": "GB",
+    "bio": "James is working on Open Commit, a marketplace for code review. It pairs developers with expert code reviewers who provide actionable feedback on their code, covering everything from style adherence to best practice implementation.\n Noteworthy: James has been coding since he was 8 years old. He decided not to attend university so he could pursue the startup path. He’s a true child of the Internet and learned how to code on Udacity. The community also loved that he’s working on a project with a very clear value proposition."
+  },
+  {
+    "image": "pio1-2",
+    "name": "Emma Salinas",
+    "age": 18,
+    "co": "USA",
+    "coflag": "US",
+    "twitter": "@emmalsalinas",
+    "bio": "Emma is designing and engineering a new kind of digital watch. It’s minimalist and can be read by both sight and touch. It is a beautiful and unique timepiece for the blind, but its aesthetic can be appreciated by anyone.\nNoteworthy: In her application, Emma came across as extremely curious, learning at an impressive rate. She spent her last two years of high school taking classes at a local college, and is currently self educating herself."
+  },
+  {
+    "image": "pio1-3",
+    "name": "Leonard Bogdonoff",
+    "age": 29,
+    "co": "USA",
+    "coflag": "US",
+    "twitter": "@rememberlenny",
+    "bio": "Lenny is building a digital genealogy of street art. He’s scraping Instagram and making a searchable database of street art around the world. This project might amplify the voice of “protest art” against the constraints of censorship from autocratic governments, but it is also a new way to glean usable information from Instagram.\nNoteworthy: Lenny has an impressive history of doing lots of stuff. He also demonstrated rapid week-over-week progress, with actionable goals and metrics (“Labeled +58,255 images from 191 street artists from around the world”, “Built an iPhone app”)."
+  },
+  {
+    "image": "pio1-4",
+    "name": "Clark Urzo",
+    "age": 23,
+    "co": "Philippines",
+    "coflag": "PH",
+    "bio": "Clark is making a programming language for physics. The idea is to enable anyone who can code to contribute to serious physics research (for example, simulations of gravitating systems). This opens up the field to the wondrous forces of open source and promotes open and accountable science along the way.\nNoteworthy: Clark has an insanely impressive trajectory. He learned to code when he was 12. By 16, he was doing Laplace transforms, tinkering with Arduinos, reading Marx and Nietzsche, and taught himself conversational German. He co-founded a VR company by 19."
+  },
+  {
+    "image": "pio1-5",
+    "name": "Harsh Sikka",
+    "age": 23,
+    "co": "USA",
+    "twitter": "@harshikka",
+    "coflag": "US",
+    "bio": "Harsh is building AI that’s inspired by biological principles from neuroscience. The algorithms will be applicable in disease diagnosis, robotics, synthetic biology, environmental sensing and other complex problem spaces.\nNoteworthy: Harsh is a graduate student studying Biocomputation and AI at Harvard and Georgia Tech. His work is a long shot. But if it works, it stands to provide a dramatic breakthrough in computing, enabling us to better prevent the outbreak of diseases by doing better forecasting. Harsh also has a long standing history of making stuff. He built a kind of Pinterest for ML models and an automated reading assessment tool. This mixture of researcher and hacker is a rare and powerful combo."
+  },
+  {
+    "name": "Hunter Scott",
+    "age": 28,
+    "co": "USA",
+    "twitter": "@hunterscott",
+    "image": "pio1-6",
+    "coflag": "US",
+    "bio": "Hunter is making engineered plants and microbes optimized for growth on Mars as a sustainable food source for the first astronauts there.\nNoteworthy: Hunter has experience with engineered food, as a co-founder of what would become Soylent. More recently, he founded a company to develop a new kind of battery and works at Reach Labs, where he builds high-frequency phased arrays for long-range wireless power transfer."
+  },
+  {
+    "name": "Bhav Ashok",
+    "age": 25,
+    "co": "Singapore & USA",
+    "twitter": "@bhavashok",
+    "image": "pio1-7",
+    "coflag": "SG",
+    "bio": "Bhav came up with a way to train a neural network to compress other neural networks. The compression process produces a faster and smaller network without sacrificing accuracy. This has the potential to vastly improve response time in self-driving cars, satellite imaging, and mobile apps.\nNoteworthy: By age 12, Bhav was programming and making money selling graphics add-ons for games. At 16, he started doing research in machine learning for bioinformatics. He left Singapore for Austin, where he created TexteDB and founded a company. Bhav later enrolled in the Masters program at CMU, earned the highest GPA in his program, founded a computer vision club, and worked on various research projects."
+  },
+  {
+    "name": "Atsu Davoh",
+    "age": 23,
+    "co": "Ghana",
+    "twitter": "@atsudavoh",
+    "coflag": "GH",
+    "image": "pio1-8",
+    "bio": "Atsu is building a way for Africans to easily acquire and spend crypto-currencies in everyday life. He built a service for buying Bitcoin via phone texts (without the internet) and is currently building the equivalent of Alibaba for Bitcoin in Africa (out January 2019).\nNoteworthy: Atsu dropped out of college in the US and moved back to Ghana to work on this idea. “I pursued this path instead of going to work at a tech giant like my friends because I wanted to do something impactful. I strongly believe that smart Africans should stay in Africa to solve the continent's problems; and this philosophy motivates every decision I make.”"
+  },
+  {
+    "name": "Harshu Musunuri",
+    "co": "USA",
+    "age": 18,
+    "image": "pio1-9",
+    "coflag": "US",
+    "bio": "Harshu is creating synthetic materials to improve the diagnosis, treatment, and prevention of sepsis, a leading cause of death in hospitals around the world. Unlike other approaches, these materials don't require refrigeration and enable low-cost toxin capture in resource-poor settings.\nNoteworthy: Harshu comes from a humble background: she was born to an electrical engineer and an elementary school math teacher in a small village in South India. But her work is anything but humble. In her short career, she’s done research with NASA’s JPL, built a seizure detection app for epileptic patients and is now working on a project with the potential to save thousands of lives. She’s also a hacker at heart: when she lacked the formal lab tools to braze at high temperature, she used the exhaust vent of a ceramic kiln."
+  },
+  {
+    "name": "Neelay Trivedi",
+    "age": 17,
+    "co": "USA",
+    "twitter": "@neelay_trivedi",
+    "image": "pio1-10",
+    "coflag": "US",
+    "bio": "Neelay is building PlaySafe, a wearable that predicts if and when someone will have a sudden cardiac arrest (SCA). It costs under $40 and works by analyzing variations in a person's heart rate, providing up to 8 minutes of prior warning before SCA occurs.\nNoteworthy: Neelay has been prolific despite his young age. Despite being just a high school senior, his work on AI-assisted disease diagnosis, computational cancer genomics, and health wearables has already been recognized by Intel, Maker Faire, Conrad Foundation, the US Army, and New Jersey Governor Phil Murphy."
+  },
+  {
+    "name": "Julia Wu",
+    "age": 23,
+    "image": "pio1-11",
+    "co": "USA & Brazil",
+    "twitter": "@thejuliawu",
+    "coflag": "BR",
+    "bio": "Julia is making a game where one collects and trades elements of renewable energy on the Ethereum blockchain. She’s leveraging the surprising power of crypto-kitties to address climate change. The values of the tokens fluctuate with the performance of clean energy in public markets.\nNoteworthy: Coming from China to Brazil at a young age and speaking only Chinese, Julia grew up as an outsider. She graduated from Brown last year, where she was a CS teaching assistant, and founded Lean In at Brown University. She interned at Microsoft and currently works at Apple."
+  },
+  {
+    "name": "Caroline Oluka",
+    "age": 28,
+    "co": "Uganda",
+    "image": "pio1-12",
+    "coflag": "UG",
+    "bio": "Caroline is working on RideUp, an eco-friendly bike delivery service for corporate offices in Kampala that aims to empower girls from the streets.\nNoteworthy: Caroline is a testament to the human spirit. She had an incredibly tough home environment that would have crippled most. She ran away from home and grew up on the streets of Uganda. She’s now decided to start a business that’s aimed at helping girls in similar situations. The world has taken note, too: she won a Ugandan social innovation award during the Pioneer Tournament and has been relentless about fundraising to grow her business."
+  },
+  {
+    "name": "Pranay Prakash",
+    "age": 21,
+    "co": "USA",
+    "twitter": "@pranaygp",
+    "image": "pio1-13",
+    "coflag": "US",
+    "bio": "Pranay is making Windsor, a programming assistant for web developers. Developer tools are static today. They don’t understand what you’re trying to accomplish and why. That shouldn’t be the case. If Windsor changes that, it might become the most important company in the world. Nell’s Primer, for coding.\nNoteworthy: Pranay got started early, learning to code at age 8. He interned at Facebook on the GraphQL team, then at ZEIT where he worked on a lot of experimental tooling. Voters loved the potential of his project. He also managed to hit his goal of getting Windsor in the hands of real users with a real codebase by the end of the tournament."
+  },
+  {
+    "name": "Lucas Gleba",
+    "age": 18,
+    "co": "Spain",
+    "coflag": "ES",
+    "twitter": "@lucasgleba",
+    "image": "pio1-14",
+    "bio": "Lucas is building a set of ML APIs that enable ordinary businesses to take advantage of machine learning without being subject experts in the matter. Just like Oracle enabled anyone to use a database, Lucas’s platform will enable any business to use ML.\nNoteworthy: Lucas is an untraditional polymath. Before working on machine learning, he designed a chemical process to transform atmospheric carbon dioxide and water into fuel. He’s also done work on artificial neural networks and computational flock behavior."
+  },
+  {
+    "name": "Thomas Uhlenbruck",
+    "age": 23,
+    "co": "Canada",
+    "coflag": "CA",
+    "twitter": "@pulseindustrial",
+    "image": "pio1-15",
+    "bio": "Thomas is building sensors for industrial equipment that will reduce CO2 emissions and improve safety. Industrial equipment is often inspected by hand today with manual audits. This is exactly the type of the world software has yet to eat. Their sensors provide operators the information they need to keep their system optimized and safe at all times.\nNoteworthy: Thomas is an undergrad at Waterloo. He’s worked in water treatment, lake modelling, and municipal engineering, but left his research group because he wanted more practical work experience. Over the course of the Pioneer Tournament, he managed both to work on engineering and secure multiple prototype installations at different plants, which is no simple feat."
+  },
+  {
+    "name": "Pavle Goloskokovic",
+    "age": 28,
+    "twitter": "@pgoloskokovic",
+    "co": "serbia",
+    "image": "pio1-16",
+    "coflag": "RS",
+    "bio": "Pavle is building a VR Adventure Game for the blind. Yep, VR for blind people. It’s a narrative-driven adventure game that completely relies on audible and tactile feedback to guide players in a role of a protagonist through an interactive story driven by exploration and puzzle-solving.\nNoteworthy: Pavle’s a risk taker: he left his job at a startup to start his own gaming studio. He’s already built several projects and games. He also had a conscientious habit of submitting actionable status updates early. He’s working on the type of unusual project the Pioneer community seems to love."
+  },
+  {
+    "name": "Amulya Balakrishnan",
+    "age": 18,
+    "co": "USA",
+    "image": "pio1-17",
+    "coflag": "US",
+    "bio": "Amulya is creating a wearable device that provides real-time, continuous ECG heart rate monitoring data. There currently exists no FDA-approved solution that can monitor ECG data in real time. Amulya is going to make it.\nNoteworthy: Amulya recently graduated high school. Her friends and family expected her to go the standard collegiate route, but she decided to charter her own course. Her earlier project, an ADHD diagnosis tool, won the Disrupt NY 2017 Hackathon Grand Prize."
+  }
+]

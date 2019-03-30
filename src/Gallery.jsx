@@ -1,20 +1,16 @@
 import React, { Component } from "react";
 import Face from "./Face";
 import { Container, Row, Col } from "react-bootstrap";
+let data = require("./data.json");
 class Gallery extends Component {
+  faces = data.map(pioneer => {
+    return <Face sourceData={pioneer} key={pioneer["image"]} />;
+  });
   render() {
     return (
       <div className="Gallery">
         <h1>{"Gallery goes here"}</h1>
-        <Container>
-          <Row>
-            <Col>
-              <Face sourceImage="secondpost.png" />
-              <Face sourceImage="pio3-2.png" />
-            </Col>
-            <Col>Some text</Col>
-          </Row>
-        </Container>
+        <Container>{this.faces}</Container>
       </div>
     );
   }
