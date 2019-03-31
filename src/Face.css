@@ -36,7 +36,7 @@
   font-family: Arcade;
   src: url("./ka1.ttf");
 }
-.FaceWithBio .Face {
+#faceWithCountryAndAge {
   border-image-source: url("./pioneerdots.png");
   border-image-repeat: round;
   border-image-slice: 8 8 8 8;

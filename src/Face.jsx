@@ -12,12 +12,13 @@ class Face extends Component {
     const { image, name } = this.props;
 
     return (
-      <div className="Face" onMouseEnter={this.handleClick}>
+      <div className="Face">
         <Figure>
           <Figure.Image
             src={process.env.PUBLIC_URL + "/faces/" + image + ".png"}
             roundedCircle
             width="128px"
+            onMouseEnter={this.handleClick}
           />
           <Figure.Caption>{name}</Figure.Caption>
         </Figure>

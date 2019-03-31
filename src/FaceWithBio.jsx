@@ -27,7 +27,7 @@ class FaceWithBio extends Component {
     });
     return (
       <div className="FaceWithBio">
-        <Row>
+        <Row id="faceWithCountryAndAge">
           <Col>
             <Face image={image} />
           </Col>
