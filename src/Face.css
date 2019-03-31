@@ -2,10 +2,13 @@
   text-align: center;
   /* transition: transform 1s; */
 }
+.ImageGrid .Face .figure img {
+  border: 7px double #051937;
+  border-radius: 11px;
+}
 .ImageGrid .Face img:hover {
   box-shadow: 0 0 30px rgba(81, 203, 238, 1);
   margin: 5px 1px 3px 0px;
-  border: 1px solid rgb(9, 10, 82);
   /* transform: translateY(-10px) scale(1.1); */
   animation: MoveUpDown 1s linear infinite;
 }
@@ -30,6 +33,7 @@
   border-image-slice: 8 8 8 8;
   border-right: 2px solid;
   border-image-width: 0px 4px 0px 0px;
+  padding-right: 50px;
 }
 /* https://www.dafont.com/karmatic-arcade.font */
 @font-face {
