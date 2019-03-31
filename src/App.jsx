@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { ReactComponent as Logo } from "./logo.svg";
 import { Navbar } from "react-bootstrap";
+import Pacman from "./Pacman";
 import Gallery from "./Gallery";
 const data = require("./data.json");
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
             {"/Hall of Fame"}
           </Navbar.Brand>
         </Navbar>
-
+        {/* <Pacman data={data} /> */}
         <Gallery data={data} />
         <Navbar bg="dark" variant="dark" id="footer">
           <Navbar.Brand href="#home">

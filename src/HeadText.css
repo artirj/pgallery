@@ -66,3 +66,17 @@ h3:after {
 .HeadText h3:after {
   margin: 5px 0 0 10px;
 }
+/* Image grid animation */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.HeadText {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease 0s slideInFromTop;
+}

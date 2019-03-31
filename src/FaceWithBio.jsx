@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Figure } from "react-bootstrap";
+import { Figure, Col, Row } from "react-bootstrap";
 import { prepareText, prepareTwitter } from "./utils";
 import Face from "./Face";
 class FaceWithBio extends Component {
@@ -27,19 +27,25 @@ class FaceWithBio extends Component {
     });
     return (
       <div className="FaceWithBio">
-        <Face image={image} />
-
-        <Figure.Caption align="center">
-          <p>
-            {name} <b>{prepareTwitter(twitter)}</b>
-          </p>
-          <p>Age: {age}</p>
-          <span>
+        <Row>
+          <Col>
+            <Face image={image} />
+          </Col>
+          <Col>
+            <div style={{ marginTop: "10px" }} />
             <p>
-              {co}
-              {flags}
+              {name} <b>{prepareTwitter(twitter)}</b>
             </p>
-          </span>
+            <p>Age: {age}</p>
+            <span>
+              <p>
+                {co}
+                {flags}
+              </p>
+            </span>
+          </Col>
+        </Row>
+        <Figure.Caption align="center">
           <p>{splittedBio[0]}</p>
           <p>
             <b>Noteworthy:</b>

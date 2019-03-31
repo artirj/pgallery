@@ -29,10 +29,10 @@ class Gallery extends Component {
             </Col>
           </Row>
           <Row>
-            <Col md={6}>
+            <Col md={7} sm={3}>
               <ImageGrid data={data} clickHandler={this.setGalleryIndex} />
             </Col>
-            <Col md={6}>
+            <Col md={5} sm={9}>
               <MyCarousel data={data} index={this.state.index} />
             </Col>
           </Row>

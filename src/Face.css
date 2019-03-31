@@ -1,6 +1,6 @@
 .Face {
   text-align: center;
-  transition: transform 1s;
+  /* transition: transform 1s; */
 }
 .ImageGrid .Face img:hover {
   box-shadow: 0 0 30px rgba(81, 203, 238, 1);
@@ -19,8 +19,9 @@
   }
 }
 
-.Face .figure-caption {
+.ImageGrid .Face .figure-caption {
   color: #172a3b;
+  padding-bottom: 30px;
 }
 
 .ImageGrid {
@@ -45,7 +46,7 @@
 }
 .card-title {
   font-family: Arcade;
-  font-size: 40px;
+  font-size: 30px;
 }
 .FaceWithBio .Face img {
   width: 150px;
@@ -55,4 +56,49 @@
   text-align: center;
   font-family: "Arcade";
   font-size: 16px;
+}
+
+.FaceWithMovement {
+  animation: MoveFace 5s linear infinite;
+  position: absolute;
+}
+@keyframes MoveFace {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Image grid animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease 0s slideInFromLeft;
+}
+/* Image grid animation */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ImageGrid {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1s ease 0s slideInFromRight;
 }

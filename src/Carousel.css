@@ -9,16 +9,14 @@
   width: 100px;
   height: 100px;
 } */
-.slide {
-  margin-left: 3%;
-  margin-right: 20%;
-}
+
 .card {
   height: 100%;
   /* background-color: #172a3b; */
   color: white;
   text-align: center;
-  min-height: 800px;
+
+  height: 700px;
   background-image: linear-gradient(
     to top,
     #051937,
@@ -27,19 +25,24 @@
     #34475d,
     #45576a
   );
+
+  margin-left: 3%;
+  margin-right: 10%;
 }
-.carousel-item {
-  transition-duration: 0s;
-  height: 700px;
-}
+
 .figure-caption {
   color: white;
 }
 .MyCarousel {
   position: fixed;
-  min-width: 700px;
+  min-width: 400px;
+  padding-right: 10%;
 }
-.MyCarousel .slide {
+.MyCarousel .card {
   border: 7px double #051937;
   border-radius: 11px;
+}
+.MyCarousel .figure-caption {
+  overflow-y: auto;
+  max-height: 25rem;
 }

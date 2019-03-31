@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import FaceWithBio from "./FaceWithBio";
-import { Carousel, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "./Carousel.css";
-
+import Tilt from "react-tilt";
 class MyCarousel extends Component {
   constructor(props, context) {
     super(props, context);
@@ -18,32 +18,20 @@ class MyCarousel extends Component {
       direction: e.direction
     });
   };
-  faces = this.props.data.map((pioneer, idx) => {
-    return (
-      <Carousel.Item key={idx} role="listbox">
-        <Card>
-          <Card.Body>
-            <Card.Title>{pioneer["name"]}</Card.Title>
-            <FaceWithBio sourceData={pioneer} />
-          </Card.Body>
-        </Card>
-      </Carousel.Item>
-    );
-  });
 
   render() {
+    let pioneer = this.props.data[this.props.index];
+
     return (
       <div className="MyCarousel">
-        <Carousel
-          interval={null}
-          fade={false}
-          activeIndex={this.props.index}
-          indicators={false}
-          onSelect={this.handleSelect}
-          controls={false}
-        >
-          {this.faces}
-        </Carousel>
+        <Tilt options={{ max: 10 }}>
+          <Card>
+            <Card.Body>
+              <Card.Title>{pioneer["name"]}</Card.Title>
+              <FaceWithBio sourceData={pioneer} />
+            </Card.Body>
+          </Card>
+        </Tilt>
       </div>
     );
   }
