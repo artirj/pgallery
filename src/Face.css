@@ -5,6 +5,8 @@
 .ImageGrid .Face .figure img {
   border: 7px double #051937;
   border-radius: 11px;
+  transform: skew(-15deg);
+  max-width: 512px;
 }
 .ImageGrid .Face img:hover {
   box-shadow: 0 0 30px rgba(81, 203, 238, 1);

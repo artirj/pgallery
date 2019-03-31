@@ -17,7 +17,7 @@ class ImageGrid extends Component {
 
   faces = this.props.data.map((pioneer, idx) => {
     return (
-      <Col key={idx} md={3} sm={12}>
+      <Col key={idx} lg={3} md={4} sm={12} xl={2}>
         <Face
           image={pioneer["image"]}
           name={pioneer["name"]}
@@ -54,7 +54,7 @@ class ImageGrid extends Component {
           <h1>Choose your Pioneer!</h1>
         </div>
 
-        <Row>{this.faces}</Row>
+        <Row noGutters={false}>{this.faces}</Row>
         {/* <div id="carousel" style={this.state.style}> */}
         {/* <Carousel
             width={"100%"}
