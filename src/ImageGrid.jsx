@@ -17,7 +17,7 @@ class ImageGrid extends Component {
 
   faces = this.props.data.map((pioneer, idx) => {
     return (
-      <Col key={idx} lg={3} md={4} sm={12} xl={2}>
+      <Col key={idx} lg={3} md={4} sm={12} xl={3}>
         <Face
           image={pioneer["image"]}
           name={pioneer["name"]}
@@ -37,14 +37,15 @@ class ImageGrid extends Component {
     return { transform: `translateY(${-idx * 10}px)` };
   };
   handleKeyPress = event => {
-    if (event.key === "ArrowDown") {
+    if (event.key === "ArrowDown" || event.wheelDelta < 0) {
       this.setState({ carouselIdx: this.state.carouselIdx + 1 });
-    } else if (event.key === "ArrowUp") {
+    } else if (event.key === "ArrowUp" || event.wheelDelta > 0) {
       this.setState({ carouselIdx: this.state.carouselIdx - 1 });
     }
   };
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress);
+    window.addEventListener("wheel", this.handleKeyPress);
   }
 
   render() {
@@ -55,8 +56,9 @@ class ImageGrid extends Component {
         </div>
 
         <Row noGutters={false}>{this.faces}</Row>
-        {/* <div id="carousel" style={this.state.style}> */}
-        {/* <Carousel
+        <div id="carousel" style={this.state.style}>
+          {" "}
+          <Carousel
             width={"100%"}
             height={200}
             direction={"vertical"}
@@ -64,8 +66,8 @@ class ImageGrid extends Component {
             index={this.state.carouselIdx}
           >
             {this.chunkedFaces()}
-          </Carousel> */}
-        {/* </div> */}
+          </Carousel>
+        </div>
       </div>
     );
   }

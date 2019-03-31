@@ -3,6 +3,7 @@ import FaceWithBio from "./FaceWithBio";
 import { Card } from "react-bootstrap";
 import "./Carousel.css";
 import Tilt from "react-tilt";
+
 class MyCarousel extends Component {
   constructor(props, context) {
     super(props, context);

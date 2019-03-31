@@ -18,7 +18,7 @@ class Face extends Component {
             src={process.env.PUBLIC_URL + "/faces/" + image + ".png"}
             // roundedCircle
             width="140px"
-            onMouseEnter={this.handleClick}
+            onClick={this.handleClick}
           />
           <Figure.Caption>{name}</Figure.Caption>
         </Figure>
