@@ -12,12 +12,6 @@ class MyCarousel extends Component {
       direction: null
     };
   }
-  handleSelect = (selectedIndex, e) => {
-    this.setState({
-      index: selectedIndex,
-      direction: e.direction
-    });
-  };
 
   render() {
     let pioneer = this.props.data[this.props.index];

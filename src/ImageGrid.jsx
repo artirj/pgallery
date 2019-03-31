@@ -50,7 +50,7 @@ class ImageGrid extends Component {
   render() {
     return (
       <div className="ImageGrid">
-        <div className="d-none d-md-block">
+        <div className="d-none d-md-block" id="chooseP">
           <h1>Choose your Pioneer!</h1>
         </div>
 

@@ -102,3 +102,10 @@
   /* This section calls the slideInFromLeft animation we defined above */
   animation: 1s ease 0s slideInFromRight;
 }
+
+#chooseP {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffe44b;
+}

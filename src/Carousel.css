@@ -34,9 +34,10 @@
   color: white;
 }
 .MyCarousel {
-  position: fixed;
+  position: sticky;
   min-width: 400px;
   padding-right: 10%;
+  top: 10%;
 }
 .MyCarousel .card {
   border: 7px double #051937;
