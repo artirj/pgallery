@@ -32,8 +32,8 @@
 
 .figure-caption {
   color: white;
-  font-family: "Helvetica" Open-sans;
 }
+
 .MyCarousel {
   position: sticky;
   min-width: 400px;
@@ -47,4 +47,5 @@
 .MyCarousel .figure-caption {
   overflow-y: auto;
   max-height: 25rem;
+  font-family: "Helvetica" Open-sans;
 }
