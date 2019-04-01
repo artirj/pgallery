@@ -112,7 +112,7 @@
 #chooseP {
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1;
   background-color: #ffe44b;
   margin-right: -70px;
   margin-left: -10px;
