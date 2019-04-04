@@ -5,6 +5,7 @@ import MyCarousel from "./Carousel";
 import ImageGrid from "./ImageGrid";
 import "./Gallery.css";
 import HeadText from "./HeadText";
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
