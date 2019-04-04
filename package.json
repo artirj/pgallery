@@ -4,7 +4,10 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "eslint-plugin-promise": "^4.1.1",
     "firebase": "^5.9.2",
+    "firebase-admin": "^7.2.0",
+    "firebase-functions": "^2.2.1",
     "firebaseui": "^3.5.2",
     "navi": "^0.12.4",
     "react": "^16.8.6",
@@ -26,7 +29,7 @@
     "now-build": "react-scripts build"
   },
   "devDependencies": {
-    "eslint": "^5.6.0"
+    "eslint": "^5.16.0"
   },
   "eslintConfig": {
     "extends": "react-app"

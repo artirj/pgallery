@@ -13,6 +13,7 @@ var config = {
   messagingSenderId: "647502346205"
 };
 firebase.initializeApp(config);
+var helloWorld = firebase.functions().httpsCallable("helloWorld");
 var database = firebase.firestore();
 //https://github.com/firebase/firebaseui-web-react
 // Configure FirebaseUI.
@@ -35,26 +36,21 @@ class Leaderboard extends Component {
     this.unregisterAuthObserver = firebase
       .auth()
       .onAuthStateChanged(user => this.setState({ isSignedIn: !!user }));
+    this.startVoteUpdate();
   }
   // Make sure we un-register Firebase observers when the component unmounts.
   componentWillUnmount() {
     this.unregisterAuthObserver();
   }
-  getTableData() {
-    database
-      .collection("users")
-      .get()
-      .then(query => {
-        query.forEach(doc => {
-          var newState = this.state.tableValues;
-          var data = doc.data();
+  startVoteUpdate() {
+    database.collection("users").onSnapshot(query => {
+      var state = this.state.tableValues;
 
-          newState[doc.id] = data;
-          this.setState({
-            tableValues: newState
-          });
-        });
+      query.forEach(doc => {
+        state[doc.id] = doc.data();
+        this.setState({ tableValues: state });
       });
+    });
   }
   plusVote(userId, votes) {
     console.log(`We are going to increase ${votes}`);
@@ -63,12 +59,6 @@ class Leaderboard extends Component {
       .doc(userId)
       .update({
         votes: votes + 1
-      })
-      .then(() => {
-        //Find matching id
-        var state = this.state.tableValues;
-        state[userId]["votes"] = votes + 1;
-        this.setState({ tableValues: state });
       });
   }
   makeTable() {
@@ -111,7 +101,6 @@ class Leaderboard extends Component {
     var user = firebase.auth().currentUser;
 
     if (!this.state.isSignedIn) {
-      this.getTableData();
       return (
         <Row>
           <StyledFirebaseAuth
