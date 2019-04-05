@@ -13,7 +13,6 @@ var config = {
   messagingSenderId: "647502346205"
 };
 firebase.initializeApp(config);
-var helloWorld = firebase.functions().httpsCallable("helloWorld");
 var database = firebase.firestore();
 //https://github.com/firebase/firebaseui-web-react
 // Configure FirebaseUI.
@@ -23,7 +22,12 @@ const uiConfig = {
   // Redirect to /signedIn after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
 
   // We will display Google and Facebook as auth providers.
-  signInOptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID]
+  signInOptions: [
+    {
+      provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      requireDisplayName: true
+    }
+  ]
 };
 
 class Leaderboard extends Component {
@@ -53,7 +57,6 @@ class Leaderboard extends Component {
     });
   }
   plusVote(userId, votes) {
-    console.log(`We are going to increase ${votes}`);
     database
       .collection("users")
       .doc(userId)
@@ -64,6 +67,7 @@ class Leaderboard extends Component {
   makeTable() {
     const tableBody = Object.keys(this.state.tableValues).map(id => {
       const user = this.state.tableValues[id];
+      const buttonDisabled = id === firebase.auth().currentUser.uid;
       return (
         <tr key={id}>
           <td>{user.name}</td>
@@ -72,8 +76,11 @@ class Leaderboard extends Component {
           <td>
             <Button
               variant="success"
+              className={buttonDisabled ? "disabled" : ""}
               onClick={() => {
-                this.plusVote(id, user.votes);
+                if (!buttonDisabled) {
+                  this.plusVote(id, user.votes);
+                }
               }}
             >
               Vote
