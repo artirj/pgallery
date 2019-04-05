@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col, Table, Button } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Table,
+  Button,
+  OverlayTrigger,
+  Tooltip
+} from "react-bootstrap";
 import "./Gallery.css";
 import firebase from "firebase";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
@@ -14,6 +22,7 @@ var config = {
 };
 firebase.initializeApp(config);
 var database = firebase.firestore();
+const vote = firebase.functions().httpsCallable("vote");
 //https://github.com/firebase/firebaseui-web-react
 // Configure FirebaseUI.
 const uiConfig = {
@@ -31,64 +40,86 @@ const uiConfig = {
 };
 
 class Leaderboard extends Component {
-  state = {
-    isSignedIn: false,
-    tableValues: new Map()
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isSignedIn: false,
+      tableValues: new Map(),
+      votesRemaining: -1
+    };
+  }
+
   // Listen to the Firebase Auth state and set the local state.
   componentDidMount() {
     this.unregisterAuthObserver = firebase
       .auth()
       .onAuthStateChanged(user => this.setState({ isSignedIn: !!user }));
-    this.startVoteUpdate();
+    this.renderTableFromDb();
   }
   // Make sure we un-register Firebase observers when the component unmounts.
   componentWillUnmount() {
     this.unregisterAuthObserver();
   }
-  startVoteUpdate() {
+  renderTableFromDb() {
     database.collection("users").onSnapshot(query => {
       var state = this.state.tableValues;
-
       query.forEach(doc => {
-        state[doc.id] = doc.data();
+        const data = doc.data();
+        state.set(doc.id, data);
         this.setState({ tableValues: state });
+        if (doc.id === firebase.auth().currentUser.uid) {
+          this.setState({ votesRemaining: data.votesRemaining });
+        }
       });
     });
   }
-  plusVote(userId, votes) {
-    database
-      .collection("users")
-      .doc(userId)
-      .update({
-        votes: votes + 1
-      });
+  plusVote(userId) {
+    vote({ userId: userId });
   }
   makeTable() {
-    const tableBody = Object.keys(this.state.tableValues).map(id => {
-      const user = this.state.tableValues[id];
-      const buttonDisabled = id === firebase.auth().currentUser.uid;
-      return (
-        <tr key={id}>
-          <td>{user.name}</td>
-          <td>{user.project}</td>
-          <td>{user.votes}</td>
-          <td>
-            <Button
-              variant="success"
-              className={buttonDisabled ? "disabled" : ""}
-              onClick={() => {
-                if (!buttonDisabled) {
-                  this.plusVote(id, user.votes);
-                }
-              }}
-            >
-              Vote
-            </Button>
-          </td>
-        </tr>
-      );
-    });
+    const tableBody = Array.from(
+      this.state.tableValues.entries(),
+      ([id, user]) => {
+        const buttonDisabled = id === firebase.auth().currentUser.uid;
+        return (
+          <tr key={id}>
+            <td>{user.name}</td>
+            <td>{user.project}</td>
+            <td>{user.votes}</td>
+            <td>
+              {!buttonDisabled ? (
+                <Button
+                  variant="success"
+                  onClick={() => {
+                    this.plusVote(id);
+                  }}
+                >
+                  Vote
+                </Button>
+              ) : (
+                <OverlayTrigger
+                  overlay={
+                    <Tooltip id="tooltip-disabled">
+                      You can't vote yourself!
+                    </Tooltip>
+                  }
+                >
+                  <span>
+                    <Button
+                      variant="success"
+                      disabled
+                      style={{ pointerEvents: "none" }}
+                    >
+                      Vote
+                    </Button>
+                  </span>
+                </OverlayTrigger>
+              )}
+            </td>
+          </tr>
+        );
+      }
+    );
 
     return (
       <Table striped bordered hover>
@@ -121,7 +152,10 @@ class Leaderboard extends Component {
         <div>
           <Row>
             <Col>
-              Welcome {user.displayName}({user.uid})!
+              <p>
+                Welcome {user.displayName}({user.uid})!
+              </p>
+              <p>Votes remaining: {this.state.votesRemaining}</p>
             </Col>
             <Col>
               <Button
