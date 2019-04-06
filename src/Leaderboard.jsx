@@ -67,7 +67,10 @@ class Leaderboard extends Component {
         const data = doc.data();
         state.set(doc.id, data);
         this.setState({ tableValues: state });
-        if (doc.id === firebase.auth().currentUser.uid) {
+        if (
+          this.state.isSignedIn &&
+          doc.id === firebase.auth().currentUser.uid
+        ) {
           this.setState({ votesRemaining: data.votesRemaining });
         }
       });
@@ -140,12 +143,10 @@ class Leaderboard extends Component {
 
     if (!this.state.isSignedIn) {
       return (
-        <Row>
-          <StyledFirebaseAuth
-            uiConfig={uiConfig}
-            firebaseAuth={firebase.auth()}
-          />
-        </Row>
+        <StyledFirebaseAuth
+          uiConfig={uiConfig}
+          firebaseAuth={firebase.auth()}
+        />
       );
     } else {
       return (
